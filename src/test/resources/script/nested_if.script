@@ -1,0 +1,27 @@
+
+int1 = 666;
+float1 = 12.34;
+flag1 = int1 >= int1;
+flag2 = float1 > int2;
+
+if int1 < 100 || flag1 do
+  if int1 < 100 && flag2 do
+    int3 = -1;
+  else do
+    if int1 > 1000 do
+      int1 = -10;
+    else if int1 > 100 do
+      int1 = -100; //hit
+    end
+    int3 = -2; //hit
+  end
+else if int1 > 800 do
+  int3 = 10;
+else if int1 > 600 do
+  int3 = 1000;
+else do
+  int3 = 1;
+end
+
+assert(int1 == -100)
+assert(int3 == -2)

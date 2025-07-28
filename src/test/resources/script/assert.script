@@ -1,0 +1,68 @@
+// boolean expressions
+assert(true || false);
+assert(!false);
+assert(true && true);
+assert(!true || !false);
+assert(true && (true || false));
+
+// relational expressions
+assert(1 < 2);
+assert(2147483648 >= 666);
+assert(-5 > -6);
+assert(0 >= -1);
+assert(10.24 <= 10.34);
+assert(2147483648.24 <= 2147483648.34);
+assert(10 != 11);
+assert(true > false);
+// assert('a' < 's');
+// assert('sw' <= 'sw');
+
+// add
+assert(1 + 999 == 1000);
+assert(2 - -2 == 4);
+assert(-1 + 1 == 0);
+assert(1 - 50 == -49);
+assert(2147483648 + 1 == 2147483649);
+assert(3402823500000000000000000000000000000000.34 + 1 == 3402823500000000000000000000000000000001.34);
+assert(12.39 + 1 == 13.39);
+
+// multiply
+assert(3 * 50 == 150);
+assert(4 / 2 == 2);
+// assert(1 / 4 == 0.25);
+assert(999999 % 3 == 0);
+assert(-5 * -5 == 25);
+// assert('ab'*3 == "ababab");
+
+b = -10;
+c = 0;
+while b < 0 do
+  c = c + b;
+  b = b + 1;
+end
+assert(c == -(1+2+3+4+5+6+7+8+9+10));
+
+// if
+a = 123;
+if a > 200 do
+  assert(false);
+end
+
+if a < 100 do
+  assert(false);
+else if a > 124 do
+  assert(false);
+else if a < 124 do
+  assert(true);
+else do
+  assert(false);
+end
+
+if false do
+  assert(false);
+else do
+  assert(true);
+end
+
+assert_msg(true, "nothing happened");
+print("assert done.");

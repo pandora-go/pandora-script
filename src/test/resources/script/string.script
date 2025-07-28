@@ -1,0 +1,5 @@
+
+name1 = "";
+assert(isBlank(name1));
+name1 = " ";
+assert(isBlank(name1));

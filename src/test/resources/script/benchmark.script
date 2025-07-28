@@ -1,0 +1,26 @@
+
+int1 = 666;
+int2 = 879;
+float1 = 12.34;
+float2 = 13.44;
+name1 = "my peter";
+flag1 = int1 >= int1;
+flag2 = float1 > int2;
+double1 = (float1 + float2) * int1;
+float3 = (float1 + float2) * int1;
+int1 = int1 * (int1 + int2);
+
+if int1 < 100 || flag1 do
+  int3 = 100;
+else if int1 > 800 do
+  int3 = 10;
+else if int1 > 600 do
+  int3 = 1000;
+else do
+  int3 = 1;
+end
+
+int2 = 0;
+while int2 < 10 do
+  int2 = int2 + 1;
+end

@@ -1,0 +1,13 @@
+
+floatF1 = 1.2
+floatF2 = floatF1
+doubleD1 = floatF1
+doubleD1 = 1.2
+double1 = floatF1
+
+assert(floatF1 == 1.2)
+assert(floatF1 == floatF2)
+assert(double1 == 1.2)
+
+double1 = floatF1 + doubleD1
+assert(double1 == 2.4)
